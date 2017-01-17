@@ -1,0 +1,34 @@
+Source code for [Gated Multimodal Units for Information Fusion](https://openreview.net/forum?id=Hy-2G6ile).
+
+![GMU model](gmu.png)
+# Dependencies
+ * [Theano](https://github.com/Theano/Theano)
+ * [Fuel](https://github.com/mila-udem/fuel)
+ * [Blocks](https://github.com/mila-udem/blocks)
+ 
+# Make dataset
+
+You can download a ready-to-use ([multimodal_imdb.hdf5](http://lisi1.unal.edu.co/mmimdb/multimodal_imdb.hdf5) and [metadata.npy](http://lisi1.unal.edu.co/mmimdb/metadata.npy)) version  of the dataset in the Fuel format, or  you can build it manually:
+
+ * Get the following files and uncompress it in the root folder of this project:
+   * [MM-IMDb dataset](http://lisi1.unal.edu.co/mmimdb/mmimdb.tar.gz)
+   * [*word2vec*](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing) pretrained model
+   * [*vgg*](https://drive.google.com/file/d/0B8MhA-4TrnTjR28xQkllMGx0aW8/view?usp=sharing) pretrained model
+   * class names: [synsets_words.txt](https://raw.githubusercontent.com/sh1r0/caffe-android-demo/master/app/src/main/assets/synset_words.txt)
+
+  * Run the make script:
+    ```
+    python3 make_dataset.py gmu.json
+    ```
+### Getting more movies
+You can extend the dataset by adding more IMDb IDs to the `links.csv` file and run `get_data.py` script to crawl other movies.
+
+# Train and eval the model
+Generate random configurations:
+```
+python3 generators/gmu.py gmu.json
+```
+Train and eval in test set (e.g. best conf for GMU model #23):
+```
+python3 run.py json/gmu_23.json
+```
