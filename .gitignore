@@ -1,0 +1,15 @@
+*.gz
+*.jpeg
+*/*.json
+json/*.json
+*.txt
+*.log
+*.pyc
+*.tar
+*.pdf
+*.npy
+7_genre/*
+genre-corpus-04/*
+dataset/*
+*.log
+*.hdf5

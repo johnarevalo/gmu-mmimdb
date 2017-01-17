@@ -1,0 +1,23 @@
+{
+    "load_in_memory": true,
+    "batch_size": 128,
+    "model_name": "linear_sum",
+    "model_class": "LinearSumTrainer",
+    "sources": ["genres", "vgg_features", "features"],
+    "hidden_size": 512,
+    "learning_rate": 0.01,
+    "init_ranges": [0.01, 0.01, 0.01, 0.01, 0.01],
+    "max_norms": [0.0, 0.0, 0.0, 0.0, 0.0],
+    "img_size": [160, 256],
+    "num_channels": 3,
+    "threshold": 0.5,
+    "n_epochs": 200,
+    "dropout": 0.5,
+    "test_size": 0.3,
+    "dev_size": 0.1,
+    "word2vec_path": "GoogleNews-vectors-negative300.bin",
+    "rng_seed": [2014, 8, 6],
+    "n_classes": 23,
+    "textual_dim": 300,
+    "visual_dim": 4096
+}
