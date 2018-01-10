@@ -28,7 +28,7 @@ Generate random configurations:
 ```
 python3 generators/gmu.py gmu.json
 ```
-Train and eval in test set (e.g. best conf for GMU model #23):
+Train the model and then report performance in test set (e.g. best conf for GMU model #23):
 ```
 python3 run.py json/gmu_23.json
 ```
