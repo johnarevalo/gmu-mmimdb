@@ -16,10 +16,14 @@ You can download a ready-to-use ([multimodal_imdb.hdf5](http://lisi1.unal.edu.co
    * [*vgg*](https://drive.google.com/file/d/0B8MhA-4TrnTjR28xQkllMGx0aW8/view?usp=sharing) pretrained model
    * class names: [synsets_words.txt](https://raw.githubusercontent.com/sh1r0/caffe-android-demo/master/app/src/main/assets/synset_words.txt)
 
-  * Run the make script:
-    ```
-    python3 make_dataset.py gmu.json
-    ```
+ * Create the `list.txt` file:
+   ```
+   ls dataset/*.json > list.txt
+   ```
+ * Run the make script:
+   ```
+   python3 make_dataset.py gmu.json
+   ```
 ### Getting more movies
 You can extend the dataset by adding more IMDb IDs to the `links.csv` file and run `get_data.py` script to crawl other movies.
 
