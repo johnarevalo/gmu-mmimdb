@@ -8,10 +8,12 @@ Source code for [Gated Multimodal Units for Information Fusion](https://openrevi
  
 # Make dataset
 
-You can download a ready-to-use ([multimodal_imdb.hdf5](http://lisi1.unal.edu.co/mmimdb/multimodal_imdb.hdf5) and [metadata.npy](http://lisi1.unal.edu.co/mmimdb/metadata.npy)) version  of the dataset in the Fuel format, or  you can build it manually:
+You can download the ready-to-use Fuel format version: [multimodal_imdb.hdf5](http://lisi1.unal.edu.co/mmimdb/multimodal_imdb.hdf5) ([archive.org mirror](https://archive.org/download/mmimdb/multimodal_imdb.hdf5)) and [metadata.npy](http://lisi1.unal.edu.co/mmimdb/metadata.npy) ([archive.org mirror](https://archive.org/download/mmimdb/metadata.npy)).
+
+Alternatively, you can build it manually:
 
  * Get the following files and uncompress it in the root folder of this project:
-   * [MM-IMDb dataset](http://lisi1.unal.edu.co/mmimdb/mmimdb.tar.gz)
+   * [MM-IMDb dataset](http://lisi1.unal.edu.co/mmimdb/mmimdb.tar.gz) ([archive.org mirror](https://archive.org/download/mmimdb/mmimdb.tar.gz))
    * [*word2vec*](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing) pretrained model
    * [*vgg*](https://drive.google.com/file/d/0B8MhA-4TrnTjR28xQkllMGx0aW8/view?usp=sharing) pretrained model
    * class names: [synsets_words.txt](https://raw.githubusercontent.com/sh1r0/caffe-android-demo/master/app/src/main/assets/synset_words.txt)
