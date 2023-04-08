@@ -15,7 +15,7 @@ Alternatively, you can build it manually:
  * Get the following files and uncompress it in the root folder of this project:
    * [MM-IMDb dataset](http://lisi1.unal.edu.co/mmimdb/mmimdb.tar.gz) ([archive.org mirror](https://archive.org/download/mmimdb/mmimdb.tar.gz))
    * [*word2vec*](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing) pretrained model
-   * [*vgg*](https://drive.google.com/file/d/0B8MhA-4TrnTjR28xQkllMGx0aW8/view?usp=sharing) pretrained model
+   * [*vgg*](https://drive.google.com/file/d/10h2rT4BjKzH3HPTFbkJ1XhQ5SiLdhcCl/view?usp=sharing) pretrained model
    * class names: [synsets_words.txt](https://raw.githubusercontent.com/sh1r0/caffe-android-demo/master/app/src/main/assets/synset_words.txt)
 
  * Create the `list.txt` file:
